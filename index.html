@@ -125,7 +125,17 @@
             
             <div class="contact-form-card">
                 <h3>Request a Consultation</h3>
-                <form action="#" method="POST">
+                
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    
+                    <input type="hidden" name="access_key" value="d88aa458-6c8f-4330-ad56-dad031bcc6c1">
+                    
+                    <input type="hidden" name="redirect" value="https://nemadzivhanani.github.io/zenbooks/#contact">
+                    
+                    <input type="hidden" name="subject" value="New Website Lead: ZenBooks Consultation">
+                    
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                     <input type="text" name="Client_Name" placeholder="Your Name" required>
                     <input type="email" name="Client_Email" placeholder="Email Address" required>
                     <select name="Service_Required" required>
@@ -134,6 +144,7 @@
                         <option value="Business & Tax">Business & Tax</option>
                         <option value="General Inquiry">General Inquiry</option>
                     </select>
+
                     <button type="submit" class="btn-blue-solid full-width">Send Message</button>
                 </form>
             </div>
