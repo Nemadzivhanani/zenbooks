@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenBooks Co. | Nationwide Accounting & Tax Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --invoice-blue: #5C8095; /* Professional Blue */
+            --charcoal-dark: #2C3E50; /* Deep Slate Typography */
+            --zen-green: #A8D5BA;     /* Accent for Success/Checkmarks */
+            --bg-white: #FFFFFF;
+            --soft-gray: #F8F9FA;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            color: var(--charcoal-dark); 
+            background: var(--bg-white); 
+            line-height: 1.6; 
+        }
+
+        /* NAVIGATION */
+        header { 
+            padding: 20px 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 100;
+        }
+
+        .logo { font-weight: 700; font-size: 1.5rem; letter-spacing: -1px; }
+
+        .nav-btn { 
+            background: var(--invoice-blue); 
+            color: white; 
+            padding: 10px 22px; 
+            border-radius: 6px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        /* HERO SECTION */
+        #hero { 
+            padding: 120px 5%; 
+            text-align: center; 
+            max-width: 900px; 
+            margin: 0 auto; 
+        }
+
+        h1 { 
+            font-size: 3.2rem; 
+            margin-bottom: 25px; 
+            letter-spacing: -2px; 
+            line-height: 1.1; 
+        }
+
+        #hero p { 
+            font-size: 1.3rem; 
+            color: #666; 
+            margin-bottom: 40px; 
+        }
+
+        .cta-main { 
+            display: inline-block; 
+            background: var(--invoice-blue); 
+            color: white; 
+            padding: 20px 45px; 
+            font-size: 1.1rem; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            box-shadow: 0 10px 25px rgba(92, 128, 149, 0.25);
+        }
+
+        /* SERVICES SECTION */
+        #services { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 60px; 
+            padding: 100px 5%; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+
+        .service-card h2 { 
+            border-left: 5px solid var(--zen-green); 
+            padding-left: 20px; 
+            margin-bottom: 30px; 
+            font-size: 1.6rem; 
+        }
+
+        ul { list-style: none; }
+
+        li { 
+            margin-bottom: 18px; 
+            display: flex; 
+            align-items: center; 
+            font-size: 1.1rem; 
+            color: #444;
+        }
+
+        li::before { 
+            content: "✓"; 
+            color: var(--zen-green); 
+            font-weight: bold; 
+            margin-right: 15px; 
+            font-size: 1.2rem; 
+        }
+
+        /* FOOTER */
+        footer { 
+            text-align: center; 
+            padding: 80px 5%; 
+            border-top: 1px solid #eee; 
+            background: var(--soft-gray); 
+        }
+
+        .footer-contact { margin-bottom: 25px; font-weight: 600; font-size: 1.1rem; }
+
+        .reg-details { font-size: 0.85rem; color: #999; margin-top: 15px; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ZenBooks Co.</div>
+        <a href="mailto:info@zenbooks.co.za" class="nav-btn">Email Us</a>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Struggling to keep your books up to date?</h1>
+            <p>Let ZenBooks Co. handle your finances with accuracy, compliance, and total peace of mind.</p>
+            <a href="https://wa.me/27827136275" class="cta-main">WhatsApp an Accountant</a>
+        </section>
+
+        <section id="services">
+            <div class="service-card">
+                <h2>Accounting & Bookkeeping</h2>
+                <ul>
+                    <li>Cloud-Based Solutions</li>
+                    <li>Bank Feed Management & Recon</li>
+                    <li>Invoicing & Payment Tracking</li>
+                    <li>Monthly & Annual Closing</li>
+                    <li>Financial Statements & Reports</li>
+                    <li>Professional Payroll Services</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h2>Business & Tax</h2>
+                <ul>
+                    <li>CIPC Compliance & Annual Returns</li>
+                    <li>Tax Clearance & Provisional Tax</li>
+                    <li>VAT Registration & Submissions</li>
+                    <li>Importers Code & Registration</li>
+                    <li>SARS Dispute Resolution</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">info@zenbooks.co.za | 082 713 6275</div>
+        <p>&copy; 2026 ZenBooks Co. | Affordable | Professional | Remote Nationwide</p>
+        <div class="reg-details">
+            Reg No: 2025/875489/07 <br>
+            Designed by <strong>Nemadzivhanani IT Solutions</strong>
+        </div>
+    </footer>
+
+</body>
+</html>
