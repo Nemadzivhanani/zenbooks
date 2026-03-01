@@ -2,16 +2,16 @@
    1. VARIABLES & RESET (DARK THEME)
    ========================================= */
 :root {
-    --bg-dark: #0F172A;        /* Deep Space / Charcoal Main BG */
-    --bg-card: #1E293B;        /* Elevated Surface for Cards */
-    --bg-input: #0B1120;       /* Darker input fields */
+    --bg-dark: #0F172A;        
+    --bg-card: #1E293B;        
+    --bg-input: #0B1120;       
     
-    --text-main: #F8F9FA;      /* Soft White for Headings */
-    --text-muted: #94A3B8;     /* Slate Gray for Paragraphs */
+    --text-main: #F8F9FA;      
+    --text-muted: #94A3B8;     
     
-    --invoice-blue: #7DA4BC;   /* Client's Invoice Blue (Lightened for Dark Mode) */
+    --invoice-blue: #7DA4BC;   
     --invoice-blue-hover: #5C8095; 
-    --zen-green: #82C89B;      /* Pastel Success/Accent Color */
+    --zen-green: #82C89B;      
     
     --font-body: 'Inter', sans-serif;
 }
@@ -113,11 +113,12 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
 .mobile-menu-btn { display: none; background: transparent; border: none; color: var(--text-main); font-size: 1.5rem; cursor: pointer; margin-left: 15px; }
 
 /* =========================================
-   3. HERO SECTION
+   3. HERO SECTION (WITH CUSTOM IMAGE)
    ========================================= */
 .hero {
-    padding: 10rem 5% 8rem;
+    padding: 12rem 5% 10rem;
     text-align: center;
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.95)), url('images/hero-bg.jpg') center/cover no-repeat;
 }
 .hero-content { max-width: 800px; margin: 0 auto; }
 
@@ -141,7 +142,7 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
 .hero-buttons { display: flex; gap: 15px; justify-content: center; opacity: 0; animation: fadeUpCascade 0.8s ease forwards 0.8s; }
 
 /* =========================================
-   4. TRUSTED PARTNERS & STATS (Your Template)
+   4. TRUSTED PARTNERS & STATS
    ========================================= */
 .trusted-partners { padding: 6rem 0; background-color: var(--bg-dark); border-top: 1px solid rgba(255,255,255,0.05); }
 .split-layout { display: flex; justify-content: space-between; align-items: center; gap: 4rem; }
@@ -234,7 +235,7 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
    ========================================= */
 @media (max-width: 900px) {
     .mobile-menu-btn { display: block; }
-    .nav-links { display: none; } /* Simplified for single-pager */
+    .nav-links { display: none; }
     .top-btn { display: none; }
 
     .hero { padding: 8rem 5% 5rem; }
