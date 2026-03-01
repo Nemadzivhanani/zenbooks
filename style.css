@@ -163,10 +163,13 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
 .section-header h2 { font-size: 2.5rem; margin-bottom: 0.5rem; }
 .section-header p { margin-bottom: 4rem; color: var(--text-muted); }
 
-.services-grid-2x2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+.services-grid-2col {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
+}
 .service-card {
     background-color: var(--bg-card); 
-    padding: 3rem 2.5rem; 
     border-radius: 12px;
     border-top: 3px solid transparent; 
     transition: all 0.3s ease;
@@ -177,9 +180,31 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
     transform: translateY(-5px); 
     box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
 }
-.icon-accent { color: var(--invoice-blue); font-size: 2rem; margin-bottom: 1.5rem; }
-.service-card h3 { font-size: 1.4rem; margin-bottom: 1rem; }
-.service-card p { font-size: 1rem; color: var(--text-muted); }
+.list-card {
+    padding: 4rem 3.5rem;
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.card-header .icon-accent { margin-bottom: 0; font-size: 2rem; color: var(--invoice-blue); }
+.card-header h3 { margin-bottom: 0; font-size: 1.6rem; }
+
+.service-list { list-style: none; }
+.service-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    color: var(--text-main);
+    font-weight: 300;
+}
+.list-icon { color: var(--zen-green); font-size: 1.1rem; }
 
 /* =========================================
    6. CONTACT SECTION
@@ -225,10 +250,8 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
    ========================================= */
 .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 .reveal.active { opacity: 1; transform: translateY(0); }
-.services-grid-2x2 .service-card:nth-child(1) { transition-delay: 0s; }
-.services-grid-2x2 .service-card:nth-child(2) { transition-delay: 0.15s; }
-.services-grid-2x2 .service-card:nth-child(3) { transition-delay: 0.3s; }
-.services-grid-2x2 .service-card:nth-child(4) { transition-delay: 0.45s; }
+.services-grid-2col .service-card:nth-child(1) { transition-delay: 0s; }
+.services-grid-2col .service-card:nth-child(2) { transition-delay: 0.2s; }
 
 /* =========================================
    9. MOBILE RESPONSIVE 
@@ -244,6 +267,8 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
     
     .split-layout { flex-direction: column; gap: 2.5rem; }
     .stats-side { flex-direction: column; width: 100%; } 
-    .services-grid-2x2 { grid-template-columns: 1fr; gap: 20px; }
-    .contact-form-card { padding: 2rem; }
+    
+    .services-grid-2col { grid-template-columns: 1fr; gap: 20px; }
+    .contact-form-card, .list-card { padding: 2rem; }
+    .card-header h3 { font-size: 1.3rem; }
 }
