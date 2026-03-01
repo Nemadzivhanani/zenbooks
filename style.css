@@ -95,7 +95,7 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
 
 .logo-link { text-decoration: none; display: flex; align-items: center; }
 .brand-logo { 
-    max-height: 45px; /* Perfect height for navbar */
+    max-height: 28px; /* Perfect height for navbar */
     width: auto;      /* Automatically scales your 512px width to preserve ratio */
     display: block; 
 }
@@ -263,7 +263,7 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
     .nav-links { display: none; }
     .top-btn { display: none; }
     
-    .brand-logo { max-height: 35px; } /* Slightly smaller logo on mobile to fit menu button */
+    .brand-logo { max-height: 22px; } /* Slightly smaller logo on mobile to fit menu button */
 
     .hero { padding: 8rem 5% 5rem; }
     .hero h1 { font-size: 2.5rem; }
