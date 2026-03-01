@@ -1,0 +1,189 @@
+:root {
+    --invoice-blue: #5C8095; 
+    --invoice-blue-hover: #4a6a7c;
+    --charcoal-dark: #1A252C; 
+    --text-gray: #4A5568;
+    --zen-green: #82C89B;     
+    --bg-white: #FFFFFF;
+    --soft-gray: #F4F7F6;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    color: var(--charcoal-dark); 
+    background: var(--soft-gray); 
+    line-height: 1.6; 
+    -webkit-font-smoothing: antialiased;
+}
+
+/* PREMIUM STICKY HEADER */
+header { 
+    padding: 20px 5%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.logo { 
+    font-weight: 700; 
+    font-size: 1.5rem; 
+    letter-spacing: -0.5px; 
+    color: var(--charcoal-dark);
+}
+
+.nav-btn { 
+    background: var(--invoice-blue); 
+    color: white; 
+    padding: 12px 24px; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    font-weight: 600; 
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(92, 128, 149, 0.2);
+}
+
+.nav-btn:hover {
+    background: var(--invoice-blue-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(92, 128, 149, 0.3);
+}
+
+/* HERO SECTION */
+#hero { 
+    padding: 140px 5% 100px; 
+    text-align: center; 
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+h1 { 
+    font-size: 3.5rem; 
+    margin-bottom: 25px; 
+    letter-spacing: -1.5px; 
+    line-height: 1.15; 
+    color: var(--charcoal-dark);
+}
+
+#hero p { 
+    font-size: 1.25rem; 
+    color: var(--text-gray); 
+    margin-bottom: 40px; 
+    font-weight: 300;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-main { 
+    display: inline-block; 
+    background: var(--charcoal-dark); 
+    color: white; 
+    padding: 18px 40px; 
+    font-size: 1.1rem; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    font-weight: 600; 
+    transition: all 0.3s ease;
+}
+
+.cta-main:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* SERVICES CARDS */
+#services { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); 
+    gap: 40px; 
+    padding: 60px 5% 120px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.service-card {
+    background: var(--bg-white);
+    padding: 50px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+}
+
+.service-card h2 { 
+    border-left: 4px solid var(--zen-green); 
+    padding-left: 20px; 
+    margin-bottom: 30px; 
+    font-size: 1.5rem; 
+    letter-spacing: -0.5px;
+}
+
+ul { list-style: none; }
+
+li { 
+    margin-bottom: 16px; 
+    display: flex; 
+    align-items: flex-start; 
+    font-size: 1.05rem; 
+    color: var(--text-gray);
+}
+
+li::before { 
+    content: "✓"; 
+    color: var(--invoice-blue); 
+    font-weight: bold; 
+    margin-right: 15px; 
+    font-size: 1.1rem; 
+}
+
+/* FOOTER */
+footer { 
+    text-align: center; 
+    padding: 60px 5%; 
+    background: var(--bg-white); 
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.footer-contact { margin-bottom: 20px; font-weight: 600; font-size: 1.1rem; color: var(--charcoal-dark); }
+.copyright { color: var(--text-gray); font-size: 0.95rem; }
+.reg-details { font-size: 0.85rem; color: #888; margin-top: 20px; line-height: 1.8; }
+.agency-tag { color: var(--invoice-blue); font-weight: 600; text-decoration: none; }
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    header { padding: 15px 5%; }
+    h1 { font-size: 2.3rem; }
+    #hero { padding: 100px 5% 60px; }
+    #hero p { font-size: 1.1rem; }
+    .cta-main { width: 100%; text-align: center; }
+    #services { grid-template-columns: 1fr; gap: 25px; padding: 40px 5% 80px; }
+    .service-card { padding: 35px 25px; }
+}
+
+/* --- JS ANIMATION CLASSES --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
