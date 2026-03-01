@@ -3,57 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZenBooks Co. | Nationwide Accounting & Tax Services</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>ZenBooks Co. | Remote Nationwide Accounting</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">ZenBooks Co.</div>
-        <a href="mailto:info@zenbooks.co.za" class="nav-btn">Email Us</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-area">
+                <a href="/" class="logo-link">
+                    <div class="brand-text">
+                        <span class="brand-title">ZenBooks Co.</span>
+                        <span class="brand-subtitle">Financial Services</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#about">ABOUT US</a>
+                <a href="#services">SERVICES</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+
+            <div class="nav-actions" style="display: flex; align-items: center;">
+                <a href="mailto:info@zenbooks.co.za" class="btn-blue-solid top-btn">Client Portal</a>
+                <button class="mobile-menu-btn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="hero-kicker force-oneline">NATIONWIDE REMOTE ACCOUNTING</span>
+            <h1>Focus on your business.<br>We'll balance the books.</h1>
+            <p>Providing accurate, compliant, and stress-free financial management for modern enterprises.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/27827136275" class="btn-blue-solid">WhatsApp an Accountant</a>
+                <a href="#services" class="btn-outline">View Services</a>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section id="hero" class="reveal">
-            <h1>Struggling to keep your books up to date?</h1>
-            <p>Let ZenBooks Co. handle your finances with accuracy, compliance, and total peace of mind. Focus on your business, we'll focus on the balance sheet.</p>
-            <a href="https://wa.me/27827136275" class="cta-main">WhatsApp an Accountant</a>
-        </section>
+    <section id="about" class="trusted-partners">
+        <div class="container split-layout reveal">
+            <div class="text-side">
+                <h2>Your Financial Partners</h2>
+                <div class="accent-line"></div>
+                <p>At ZenBooks Co., we believe that pristine financials are the foundation of any successful business. Operating entirely in the cloud, we provide seamless, real-time accounting solutions to clients nationwide, ensuring your compliance and growth are always on track.</p>
+            </div>
+            <div class="stats-side">
+                <div class="stat-box">
+                    <span class="stat-accent">100%</span>
+                    <span class="stat-sub">CLOUD-BASED</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-accent">SARS</span>
+                    <span class="stat-sub">COMPLIANT</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="services">
-            <div class="service-card reveal">
-                <h2>Accounting & Bookkeeping</h2>
+    <section id="services" class="practice-areas">
+        <div class="container">
+            <div class="section-header center reveal">
+                <h2>Our Services</h2>
+                <p>Comprehensive financial solutions tailored for modern businesses.</p>
+            </div>
+            
+            <div class="services-grid-2x2 reveal">
+                <div class="service-card">
+                    <i class="fas fa-calculator icon-accent"></i>
+                    <h3>Bookkeeping</h3>
+                    <p>Daily bank feed management, reconciliations, and meticulous cloud software setup.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-invoice-dollar icon-accent"></i>
+                    <h3>Tax Compliance</h3>
+                    <p>Accurate VAT registrations, provisional tax, and SARS dispute resolutions.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users icon-accent"></i>
+                    <h3>Payroll Services</h3>
+                    <p>Confidential employee payroll processing, payslips, and PAYE submissions.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line icon-accent"></i>
+                    <h3>Financial Statements</h3>
+                    <p>Monthly reporting and annual closing statements to guide your business strategy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container split-layout align-start reveal">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Ready to streamline your accounting? Reach out today.</p>
+                
+                <div class="address-block mt-2">
+                    <i class="fas fa-envelope icon-accent"></i>
+                    <div>
+                        <strong>Email Us</strong><br>
+                        <a href="mailto:info@zenbooks.co.za" style="color: var(--text-muted); text-decoration: none;">info@zenbooks.co.za</a>
+                    </div>
+                </div>
+
+                <div class="address-block">
+                    <i class="fas fa-phone-alt icon-accent"></i>
+                    <div>
+                        <strong>Call or WhatsApp</strong><br>
+                        <a href="https://wa.me/27827136275" style="color: var(--text-muted); text-decoration: none;">082 713 6275</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-card">
+                <h3>Request a Consultation</h3>
+                <form action="#" method="POST">
+                    <input type="text" name="Client_Name" placeholder="Your Name" required>
+                    <input type="email" name="Client_Email" placeholder="Email Address" required>
+                    <select name="Service_Required" required>
+                        <option value="" disabled selected>Select Service...</option>
+                        <option value="Bookkeeping">Bookkeeping</option>
+                        <option value="Tax Services">Tax Services</option>
+                        <option value="Payroll">Payroll</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                    </select>
+                    <button type="submit" class="btn-blue-solid full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <span class="brand-title" style="color: var(--text-main); font-size: 1.5rem;">ZenBooks Co.</span>
+                <p style="font-size: 0.9rem; margin-top: 10px;">Professional, remote accounting and tax services for modern enterprises.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
                 <ul>
-                    <li>Cloud-Based Software Setup</li>
-                    <li>Bank Feed Management & Recon</li>
-                    <li>Invoicing & Payment Tracking</li>
-                    <li>Monthly & Annual Closing</li>
-                    <li>Financial Statements & Reports</li>
-                    <li>Professional Payroll Services</li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-
-            <div class="service-card reveal">
-                <h2>Business & Tax Compliance</h2>
+            <div class="footer-col">
+                <h4>Legal</h4>
                 <ul>
-                    <li>CIPC Compliance & Annual Returns</li>
-                    <li>Tax Clearance & Provisional Tax</li>
-                    <li>VAT Registration & Submissions</li>
-                    <li>Importers Code Registration</li>
-                    <li>SARS Dispute Resolution</li>
-                    <li>Company Registrations</li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><span style="color: var(--text-muted); font-size: 0.9rem;">Reg No: 2025/875489/07</span></li>
                 </ul>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-contact">info@zenbooks.co.za &nbsp;|&nbsp; 082 713 6275</div>
-        <p class="copyright">&copy; 2026 ZenBooks Co. | Professional Remote Accounting</p>
-        <div class="reg-details">
-            Reg No: 2025/875489/07 <br>
-            Designed by <span class="agency-tag">Nemadzivhanani IT Solutions</span>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ZenBooks Co. All rights reserved.</p>
+            <p style="margin-top: 5px; font-size: 0.8rem; color: var(--text-muted);">
+                Designed and Managed by <a href="https://nemadzivhananiit.co.za" target="_blank" style="color: var(--invoice-blue); text-decoration: none; font-weight: 500; transition: opacity 0.3s ease;">Nemadzivhanani IT Solutions</a>
+            </p>
         </div>
     </footer>
 
