@@ -95,8 +95,8 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
 
 .logo-link { text-decoration: none; display: flex; align-items: center; }
 .brand-logo { 
-    max-height: 28px; /* Perfect height for navbar */
-    width: auto;      /* Automatically scales your 512px width to preserve ratio */
+    max-height: 18px; /* Drastically reduced size for a sleek, premium look */
+    width: auto;      
     display: block; 
 }
 
@@ -115,7 +115,7 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
 .mobile-menu-btn { display: none; background: transparent; border: none; color: var(--text-main); font-size: 1.5rem; cursor: pointer; margin-left: 15px; }
 
 /* =========================================
-   3. HERO SECTION (WITH CUSTOM IMAGE)
+   3. HERO SECTION
    ========================================= */
 .hero {
     padding: 12rem 5% 10rem;
@@ -263,7 +263,7 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
     .nav-links { display: none; }
     .top-btn { display: none; }
     
-    .brand-logo { max-height: 22px; } /* Slightly smaller logo on mobile to fit menu button */
+    .brand-logo { max-height: 14px; } /* Minimized heavily for mobile screens */
 
     .hero { padding: 8rem 5% 5rem; }
     .hero h1 { font-size: 2.5rem; }
