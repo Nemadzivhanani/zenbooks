@@ -123,30 +123,25 @@
                 </div>
             </div>
             
-            <div class="contact-form-card">
-                <h3>Request a Consultation</h3>
+           <div class="contact-form-card" style="text-align: center; padding: 4rem 3rem;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Let's Get Started</h3>
+                <p style="color: var(--text-muted); margin-bottom: 2.5rem; line-height: 1.5;">Choose your preferred method below to connect directly with our accounting team. We respond to all inquiries promptly.</p>
                 
-                <form action="https://api.web3forms.com/submit" method="POST">
+                <div style="display: flex; flex-direction: column; gap: 15px;">
                     
-                    <input type="hidden" name="access_key" value="d88aa458-6c8f-4330-ad56-dad031bcc6c1">
-                    
-                    <input type="hidden" name="redirect" value="https://nemadzivhanani.github.io/zenbooks/#contact">
-                    
-                    <input type="hidden" name="subject" value="New Website Lead: ZenBooks Consultation">
-                    
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <a href="mailto:info@zenbooks.co.za?subject=Consultation%20Inquiry%20-%20ZenBooks%20Co.&body=Hi%20ZenBooks%20team,%0D%0A%0D%0AI%20would%20like%20to%20request%20a%20consultation.%0D%0A%0D%0AMy%20Name:%20%0D%0AContact%20Number:%20%0D%0AService%20Required:%20" 
+                       class="btn-blue-solid" 
+                       style="padding: 18px; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <i class="fas fa-envelope"></i> Send an Email
+                    </a>
 
-                    <input type="text" name="Client_Name" placeholder="Your Name" required>
-                    <input type="email" name="Client_Email" placeholder="Email Address" required>
-                    <select name="Service_Required" required>
-                        <option value="" disabled selected>Select Service...</option>
-                        <option value="Accounting Services">Accounting Services</option>
-                        <option value="Business & Tax">Business & Tax</option>
-                        <option value="General Inquiry">General Inquiry</option>
-                    </select>
+                    <a href="https://wa.me/27827136275?text=Hi%20ZenBooks!%20I%20would%20like%20to%20request%20a%20consultation%20regarding%20your%20services." 
+                       class="btn-outline" 
+                       style="padding: 18px; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; gap: 10px; border-color: var(--zen-green); color: var(--zen-green);">
+                        <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> WhatsApp Us
+                    </a>
 
-                    <button type="submit" class="btn-blue-solid full-width">Send Message</button>
-                </form>
+                </div>
             </div>
         </div>
     </section>
