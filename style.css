@@ -172,9 +172,15 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
    ========================================= */
 .trusted-partners { 
     padding: 6rem 0; 
-    border-top: 1px solid rgba(0,0,0,0.05); 
-    /* Adds the keyboard image with a heavy white overlay for readability */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.95)), url('images/keyboard-bg.jpg') center/cover no-repeat; 
+    
+    /* The Magic Fade: Starts solid white (0%), reveals the keyboard in the middle (15-85%), and fades back to solid white (100%) */
+    background: linear-gradient(
+        to bottom, 
+        rgba(255, 255, 255, 1) 0%, 
+        rgba(255, 255, 255, 0.85) 15%, 
+        rgba(255, 255, 255, 0.85) 85%, 
+        rgba(255, 255, 255, 1) 100%
+    ), url('images/keyboard-bg.jpg') center/cover no-repeat; 
 }
 .split-layout { display: flex; justify-content: space-between; align-items: center; gap: 4rem; }
 .align-start { align-items: flex-start; }
