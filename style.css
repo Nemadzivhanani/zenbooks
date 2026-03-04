@@ -323,6 +323,21 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
     .hero-buttons a { width: 100%; justify-content: center; }
     
     .split-layout { flex-direction: column; gap: 2.5rem; }
+    /* Fixes the giant keyboard zoom on mobile by repeating a smaller version */
+    .trusted-partners {
+        background-image: linear-gradient(
+            to bottom, 
+            rgba(255, 255, 255, 1) 0%, 
+            rgba(255, 255, 255, 0.88) 15%, 
+            rgba(255, 255, 255, 0.88) 85%, 
+            rgba(255, 255, 255, 1) 100%
+        ), url('images/keyboard-bg.jpg');
+        background-position: top center, top center;
+        /* The magic: the gradient doesn't repeat, but the photo tiles downward */
+        background-repeat: no-repeat, repeat; 
+        /* Restricts the photo to 200% width so it shrinks the keys way down */
+        background-size: 100% 100%, 200% auto; 
+    }
     .stats-side { grid-template-columns: 1fr; width: 100%; } 
     
     .services-grid-2col { grid-template-columns: 1fr; gap: 20px; }
