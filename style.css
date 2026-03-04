@@ -297,10 +297,12 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
 
   .hero { 
         padding: 8rem 5% 5rem; 
-        /* Fixes the extreme mobile zoom by anchoring to the top and scaling the width */
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 1)), url('images/hero-bg.jpg') top center no-repeat;
-        background-size: 180% auto; 
         background-color: var(--bg-main);
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url('images/hero-bg.jpg');
+        background-position: top center, top center;
+        background-repeat: no-repeat, no-repeat;
+        /* The magic fix: Gradient stretches 100%, image stays at 180% */
+        background-size: 100% 100%, 180% auto; 
     }
     .hero h1 { font-size: 3rem; }
     .hero .hero-subtitle { font-size: 1.4rem; } 
