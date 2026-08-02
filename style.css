@@ -2,9 +2,9 @@
    1. VARIABLES & RESET (LIGHT THEME)
    ========================================= */
 :root {
-    /* New Light Theme Backgrounds */
-    --bg-main: #FFFFFF;        
-    --bg-alt: #F8F9FA;        
+    /* Warmed up the backgrounds to match the new cream flyer */
+    --bg-main: #FCFAF6;        
+    --bg-alt: #F5EFE6;        
     --bg-card: #FFFFFF;       
     
     /* New Dark Text Colors */
@@ -76,7 +76,7 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
    2. NAVBAR
    ========================================= */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(252, 250, 246, 0.95);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding: 1rem 0;
@@ -120,8 +120,7 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
 .hero {
     padding: 12rem 5% 10rem;
     text-align: center;
-    /* Light overlay over the background image so dark text pops */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 1)), url('images/hero-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(to bottom, rgba(252, 250, 246, 0.75), rgba(252, 250, 246, 1)), url('images/hero-bg.jpg') center/cover no-repeat;
 }
 .hero-content { max-width: 800px; margin: 0 auto; }
 
@@ -140,8 +139,9 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
 
 .hero .hero-subtitle { 
     font-size: 2rem; 
-    color: var(--invoice-blue); 
-    font-weight: 600; 
+    color: #000000; 
+    text-transform: uppercase;
+    font-weight: 700; 
     margin-bottom: 1.5rem; 
     letter-spacing: -0.5px;
     opacity: 0; 
@@ -173,13 +173,12 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
 .trusted-partners { 
     padding: 6rem 0; 
     
-    /* The Magic Fade: Starts solid white (0%), reveals the keyboard in the middle (15-85%), and fades back to solid white (100%) */
     background: linear-gradient(
         to bottom, 
-        rgba(255, 255, 255, 1) 0%, 
-        rgba(255, 255, 255, 0.85) 15%, 
-        rgba(255, 255, 255, 0.85) 85%, 
-        rgba(255, 255, 255, 1) 100%
+        rgba(252, 250, 246, 1) 0%, 
+        rgba(252, 250, 246, 0.85) 15%, 
+        rgba(252, 250, 246, 0.85) 85%, 
+        rgba(252, 250, 246, 1) 100%
     ), url('images/keyboard-bg.jpg') center/cover no-repeat; 
 }
 .split-layout { display: flex; justify-content: space-between; align-items: center; gap: 4rem; }
@@ -224,13 +223,12 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
     transform: translateY(-5px); 
     box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
 }
-/* Add background images to the Service Cards with a white overlay */
 .services-grid-2col .service-card:nth-child(1) {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.96)), url('images/accounting-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(to bottom, rgba(252, 250, 246, 0.92), rgba(252, 250, 246, 0.96)), url('images/accounting-bg.jpg') center/cover no-repeat;
 }
 
 .services-grid-2col .service-card:nth-child(2) {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.96)), url('images/tax-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(to bottom, rgba(252, 250, 246, 0.92), rgba(252, 250, 246, 0.96)), url('images/tax-bg.jpg') center/cover no-repeat;
 }
 .list-card {
     padding: 4rem 3.5rem;
@@ -306,11 +304,10 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
     
     .brand-logo { max-height: 14px; } 
 
- .hero { 
+    .hero { 
         padding: 8rem 5% 5rem; 
         background-color: var(--bg-main);
-        /* The magic fix: We added "0%" and "65%" so it turns solid white BEFORE the image ends */
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 65%), url('images/hero-bg.jpg');
+        background-image: linear-gradient(to bottom, rgba(252, 250, 246, 0.7) 0%, rgba(252, 250, 246, 1) 65%), url('images/hero-bg.jpg');
         background-position: top center, top center;
         background-repeat: no-repeat, no-repeat;
         background-size: 100% 100%, 180% auto; 
@@ -318,26 +315,24 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
     .hero h1 { font-size: 3rem; }
     .hero .hero-subtitle { font-size: 1.4rem; } 
     
-    /* Stacked buttons for mobile */
     .hero-buttons { flex-direction: column; padding: 0 5%; }
     .hero-buttons a { width: 100%; justify-content: center; }
     
     .split-layout { flex-direction: column; gap: 2.5rem; }
-    /* Fixes the giant keyboard zoom on mobile by repeating a smaller version */
+
     .trusted-partners {
         background-image: linear-gradient(
             to bottom, 
-            rgba(255, 255, 255, 1) 0%, 
-            rgba(255, 255, 255, 0.88) 15%, 
-            rgba(255, 255, 255, 0.88) 85%, 
-            rgba(255, 255, 255, 1) 100%
+            rgba(252, 250, 246, 1) 0%, 
+            rgba(252, 250, 246, 0.88) 15%, 
+            rgba(252, 250, 246, 0.88) 85%, 
+            rgba(252, 250, 246, 1) 100%
         ), url('images/keyboard-bg.jpg');
         background-position: top center, top center;
-        /* The magic: the gradient doesn't repeat, but the photo tiles downward */
         background-repeat: no-repeat, repeat; 
-        /* Restricts the photo to 200% width so it shrinks the keys way down */
         background-size: 100% 100%, 200% auto; 
     }
+    
     .stats-side { grid-template-columns: 1fr; width: 100%; } 
     
     .services-grid-2col { grid-template-columns: 1fr; gap: 20px; }
