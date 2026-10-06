@@ -14,6 +14,8 @@
     /* Brand Accents */
     --invoice-blue: #7DA4BC;   
     --invoice-blue-hover: #5C8095; 
+    --leaf-green: #1B7F37;          /* main buttons (white text 5.08:1) */
+    --leaf-green-hover: #166B2E;    /* main buttons hover (6.61:1) */
     --zen-green: #BEE5B0;      
     
     --font-body: 'Inter', sans-serif;
@@ -37,7 +39,7 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
 
 /* Buttons */
 .btn-blue-solid {
-    background-color: var(--invoice-blue);
+    background-color: var(--leaf-green);
     color: #FFFFFF;
     padding: 12px 28px;
     text-decoration: none;
@@ -50,9 +52,9 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; letter-spacing: -0.5
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .btn-blue-solid:hover { 
-    background-color: var(--invoice-blue-hover); 
+    background-color: var(--leaf-green-hover); 
     transform: translateY(-3px); 
-    box-shadow: 0 6px 20px rgba(125, 164, 188, 0.3); 
+    box-shadow: 0 6px 20px rgba(27, 127, 55, 0.3); 
 }
 
 .btn-outline {
